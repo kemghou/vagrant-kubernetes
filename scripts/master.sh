@@ -1,6 +1,6 @@
 #! /bin/bash
 
-MASTER_IP="172.192.1.10"
+MASTER_IP="172.192.1.20"
 NODENAME=$(hostname -s)
 POD_CIDR="192.168.0.0/16"
 
