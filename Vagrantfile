@@ -4,9 +4,9 @@ N = 2
 Vagrant.configure("2") do |config|
       config.vm.provision "shell", inline: <<-SHELL
           apt-get update -y
-          echo "172.192.1.10  master-node" >> /etc/hosts
-          echo "172.192.1.11  worker-node01" >> /etc/hosts
-          echo "172.192.1.12  worker-node02" >> /etc/hosts
+          echo "172.192.1.20  master-node" >> /etc/hosts
+          echo "172.192.1.21  worker-node01" >> /etc/hosts
+          echo "172.192.1.22  worker-node02" >> /etc/hosts
       SHELL
       
       config.vm.define "k8s-master" do |master|
